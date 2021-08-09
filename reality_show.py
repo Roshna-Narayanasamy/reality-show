@@ -67,7 +67,6 @@ class contestant:
 
                 status=check[0][1]
                 close='closed'
-                print(status)
                 if(status=="open"):
                     mycursor.execute("update shows set voting_status=%s where show_id=%s",(close,opt,))
                     mydb.commit()
